@@ -24,10 +24,12 @@ import threejs from "./tech/threejs.svg";
 import shopify from "./company/antixsol.jpeg";
 import starbucks from "./company/dev.jpeg";
 import tesla from "./company/dreamcursor.jpeg";
-import devsinc from "./company/devsinc.jpeg";
+import devsinc from "./company/devsinc.jpg";
+import ted from "./company/ted.jpg";
 import upwork from "./company/upwork.jpeg";
 import govt from "./company/govt.jpeg";
 import islamic from "./company/islamic.jpeg";
+import unicef from "./company/unicef.png";
 
 import carrent from "./carrent.jpg";
 import jobit from "./jobit.jpg";
@@ -65,4 +67,6 @@ export {
   upwork,
   govt,
   islamic,
+  ted,
+  unicef,
 };

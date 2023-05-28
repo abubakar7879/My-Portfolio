@@ -1,11 +1,14 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-
+import resume from '../../public/resume.pdf';
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import gmail from "../assets/gmail.png";
+import linkedin from "../assets/linkedin.png";
+import twitter from "../assets/twitter.png";
 
 const Contact = () => {
   const formRef = useRef();
@@ -27,16 +30,16 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_r0jcplm",
-        "template_1t76uxq",
+        "service_0efzx8m",
+        "template_3ref3vd",
         {
-          form_name: form.name,
+          name: form.name,
           to_name: "Abubakar",
-          from_email: form.email,
-          to_email: "abubakarqasar@gmail.com",
+          email: form.email,
+          to_email: "m.abubakar01079@gmail.com",
           message: form.message,
         },
-        "Jqq9AvwIuSjoMiA5c"
+        "Tew9A-B-c5W2S7CYH"
       )
       .then(
         () => {
@@ -53,7 +56,7 @@ const Contact = () => {
           setLoading(false);
 
           console.log(error);
-          alert("Thank you. I will get back to you as soon as possible.");
+          alert("Error");
         }
       );
   };
@@ -114,12 +117,22 @@ const Contact = () => {
           >
             {loading ? "Sending..." : "Send"}
           </button>
+          <div className="flex mt-5 space-x-4">
+            <a href="https://twitter.com/themvcguy">
+              <img src={twitter} alt="Twitter Icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/mabubakar1/">
+              <img src={linkedin} alt="LinkedIn Icon" />
+            </a>
+            <a href="mailto:m.abubakar01079@gmail.com">
+              <img src={gmail} alt="Email Icon" />
+            </a>
+          </div>
+          <div>
+          <a href={resume} download="Resume-Muhammad Abubakar.pdf"> Download CV </a>
+          </div>
         </form>
-        <p className={styles.sectionSubText}><br/></p>
-        <p className={styles.sectionSubText}><strong>Email : </strong><a href="mailto:abubakarqasar@gmail.com"><u> abubakarqasar@gmail.com</u></a></p>
-        <p className={styles.sectionSubText}><strong>LinkedIn : </strong><a href="https://www.linkedin.com/in/mabubakar1/"> <u>Click Here</u></a></p>
       </motion.div>
-
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] hidden sm:block"

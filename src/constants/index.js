@@ -25,7 +25,9 @@ import {
   devsinc,
   upwork,
   govt,
+  ted,
   islamic,
+  unicef
 } from "../assets";
 
 export const navLinks = [
@@ -53,12 +55,8 @@ const services = [
     icon: mobile,
   },
   {
-    title: "WordPress Developer",
+    title: "SQA Engineer",
     icon: backend,
-  },
-  {
-    title: "SEO Expert",
-    icon: creator,
   },
 ];
 
@@ -119,7 +117,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Team Lead",
+    title: "Data Analyst",
     company_name: "Govt. Of Pakistan",
     icon: govt,
     iconBg: "#383E56",
@@ -131,23 +129,61 @@ const experiences = [
     ],
   },
   // {
-  //   title: "React.js Developer",
-  //   company_name: "DevHub",
-  //   icon: starbucks,
-  //   iconBg: "#E6DEDD",
-  //   date: "March 2020 - April 2021",
+  //   title: "Trainee",
+  //   company_name: "UNICEF Pakistan",
+  //   icon: unicef,
+  //   iconBg: "#383E56",
+  //   date: "August 2020 - November 2020",
   //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //     "Worked at Ministry of Health as a software engineer.",
+  //     "Worked for Sehat Sahulat Program.",
+  //     "Done Data Analysis and Verification of 30,000+ Citizens in 3 Months",
   //   ],
   // },
+  {
+    title: "React.js Developer",
+    company_name: "DevHub",
+    icon: starbucks,
+    iconBg: "#383E56",
+    date: "March 2020 - April 2021",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "IT & Media Consultant",
+    company_name: "Islamic Aid",
+    icon: islamic,
+    iconBg: "#383E56",
+    date: "April 2020 - November 2021",
+    points: [
+      "Assess and enhance IT infrastructure for improved operations.",
+      "Develop impactful media strategies to raise awareness and attract support.",
+      "Provide technical training and support for staff members.",
+      "Ensure robust data security and privacy measures are in place.",
+    ],
+  },
+  {
+    title: "Director IT",
+    company_name: "TEDx",
+    icon: ted,
+    iconBg: "#383E56",
+    date: "April 2021 - July 2021",
+    points: [
+      "Oversee and manage the IT infrastructure and operations for TEDx events.",
+      "Develop and implement innovative technology solutions to enhance the attendee experience.",
+      "Ensure seamless audiovisual and technical support during TEDx talks and presentations.",
+      "Collaborate with internal teams and external partners to integrate technology for effective event management and livestreaming.",
+    ],
+  },
   {
     title: "IT Consultant",
     company_name: "DreamCursor",
     icon: tesla,
-    iconBg: "#383E56",
+    iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
       "Developing and maintaining website of the company",
@@ -204,10 +240,10 @@ const testimonials = [
   {
     testimonial:
       "We hired Abubakar to help us with a major software migration, and he exceeded our expectations. He was able to seamlessly transition us to the new system.",
-    name: "Daniel Gonzalo",
-    designation: "CEO",
-    company: "ZIK Consultancy",
-    image: "https://media.licdn.com/dms/image/C4E03AQG7vlxA6gmUEg/profile-displayphoto-shrink_400_400/0/1646317196179?e=1684368000&v=beta&t=K2z62H5UPJPIzr90R6tuAOHfuQD_B54CrriPkKBQkUU",
+    name: "Thomas Donahue",
+    designation: "Director",
+    company: "Brandust",
+    image: "https://i.ibb.co/P6mHmYm/900285e0-59f5-4ef6-9ef2-b96f3b8a089a.jpg",
   },
 ];
 
